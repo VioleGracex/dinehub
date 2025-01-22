@@ -1,32 +1,32 @@
-import React, {useState} from 'react';
-import {svg} from '../assets/svg';
+import React, { useState } from 'react';
+import { svg } from '../assets/svg';
 
-import {hooks} from '../hooks';
-import {components} from '../components';
+import { hooks } from '../hooks';
+import { components } from '../components';
 
 const progress = [
   {
     id: 1,
-    title: 'Order Confirmed',
-    description: 'Your order has been confirmed',
+    title: 'Заказ подтвержден',
+    description: 'Ваш заказ был подтвержден',
     status: 'done',
   },
   {
     id: 2,
-    title: 'Order is Being Cooked',
-    description: 'Estimated for 9:02 pm',
+    title: 'Заказ готовится',
+    description: 'Ожидается в 9:02 вечера',
     status: 'done',
   },
   {
     id: 3,
-    title: 'Courier Delivering',
-    description: 'Estimated for 9:12 pm',
+    title: 'Курьер в пути',
+    description: 'Ожидается в 9:12 вечера',
     status: 'pending',
   },
   {
     id: 4,
-    title: 'Receiving',
-    description: 'Estimated for 9:32 pm',
+    title: 'Получение',
+    description: 'Ожидается в 9:32 вечера',
     status: 'pending',
   },
 ];
@@ -44,7 +44,7 @@ export const TrackYourOrder: React.FC = () => {
     return (
       <components.Header
         showGoBack={true}
-        title='Track your order'
+        title='Отследить заказ'
       />
     );
   };
@@ -65,7 +65,7 @@ export const TrackYourOrder: React.FC = () => {
             className='row-center'
             style={{gap: 14}}
           >
-            <span className='t14'>Your order:</span>
+            <span className='t14'>Ваш заказ:</span>
             <span
               className='t14'
               style={{fontWeight: 500, color: 'var(--main-turquoise)'}}
@@ -77,12 +77,12 @@ export const TrackYourOrder: React.FC = () => {
             className='row-center'
             style={{gap: 14}}
           >
-            <span className='t14'>Date:</span>
+            <span className='t14'>Дата:</span>
             <span
               className='t14'
               style={{fontWeight: 500, color: 'var(--main-turquoise)'}}
             >
-              Aug 31 at 8:32 pm
+              31 августа в 8:32 вечера
             </span>
           </div>
         </section>
@@ -161,7 +161,7 @@ export const TrackYourOrder: React.FC = () => {
   const renderFooter = (): JSX.Element => {
     return (
       <footer style={{padding: 20}}>
-        <components.Button text='Chat support' />
+        <components.Button text='Чат поддержка' />
       </footer>
     );
   };

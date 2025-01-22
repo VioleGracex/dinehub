@@ -25,7 +25,7 @@ export const ConfirmationCode: React.FC = () => {
     return (
       <components.Header
         showGoBack={true}
-        title='Verify number'
+        title='Проверить номер'
       />
     );
   };
@@ -48,7 +48,7 @@ export const ConfirmationCode: React.FC = () => {
             className='t16'
             style={{marginBottom: 20, display: 'block'}}
           >
-            Enter your OTP code here.
+            Введите свой одноразовый пароль здесь.
           </span>
           <div
             style={{
@@ -95,16 +95,16 @@ export const ConfirmationCode: React.FC = () => {
             className='row-center'
             style={{gap: 4, marginBottom: 20}}
           >
-            <span className='t16'>Didn’t receive the OTP?</span>
+            <span className='t16'>Не получили одноразовый пароль?</span>
             <span
               className='t16 clickable'
               style={{color: 'var(--main-turquoise)'}}
             >
-              Resend.
+              Отправить повторно.
             </span>
           </div>
           <components.Button
-            text='verify'
+            text='проверять'
             onClick={() => {
               navigate(Routes.SignUpAccountCreated);
             }}

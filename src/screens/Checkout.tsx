@@ -25,7 +25,7 @@ export const Checkout: React.FC = () => {
   const renderHeader = (): JSX.Element => {
     return (
       <components.Header
-        title='Checkout'
+        title='Оформление заказа'
         showGoBack={true}
       />
     );
@@ -54,7 +54,7 @@ export const Checkout: React.FC = () => {
             className='t18'
             style={{color: 'var(--main-color)', textTransform: 'capitalize'}}
           >
-            My order
+            Мой заказ
           </span>
           <span
             className='t18'
@@ -83,11 +83,11 @@ export const Checkout: React.FC = () => {
           className='row-center-space-between'
           style={{marginBottom: 8}}
         >
-          <span className='t14'>Discount</span>
+          <span className='t14'>Скидка</span>
           <span className='t14'>- ${discount}</span>
         </div>
         <div className='row-center-space-between'>
-          <span className='t14'>Delivery</span>
+          <span className='t14'>Доставка</span>
           <span className='t14'>${delivery}</span>
         </div>
       </section>
@@ -115,7 +115,7 @@ export const Checkout: React.FC = () => {
               textTransform: 'capitalize',
             }}
           >
-            Shipping details
+            Детали доставки
           </span>
           <span className='t12 number-of-lines-1'>
             8000 S Kirkland Ave, Chicago, IL 6065...
@@ -146,7 +146,7 @@ export const Checkout: React.FC = () => {
               textTransform: 'capitalize',
             }}
           >
-            Payment method
+            Способ оплаты
           </span>
           <span className='t12 number-of-lines-1'>4947 **** **** 3157</span>
         </div>
@@ -159,7 +159,7 @@ export const Checkout: React.FC = () => {
     return (
       <section style={{padding: 20}}>
         <components.Button
-          text='Confirm order'
+          text='Подтвердить заказ'
           onClick={() => navigate(Routes.OrderSuccessful)}
           // onClick={() => navigate(Routes.OrderFailed)}
         />

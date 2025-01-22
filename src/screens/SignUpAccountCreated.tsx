@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
-
-import {hooks} from '../hooks';
-import {Routes} from '../routes';
-import {components} from '../components';
+import React, { useState } from 'react';
+import { hooks } from '../hooks';
+import { Routes } from '../routes';
+import { components } from '../components';
 
 export const SignUpAccountCreated: React.FC = () => {
   const dispatch = hooks.useDispatch();
@@ -36,18 +35,18 @@ export const SignUpAccountCreated: React.FC = () => {
         >
           <img
             src='https://george-fx.github.io/dine-hub/05.jpg'
-            alt='Account created'
+            alt='Аккаунт создан'
             className='status-img'
             style={{marginBottom: 14}}
           />
           <h2 style={{textAlign: 'center', marginBottom: 14}}>
-            Account Created!
+            Аккаунт создан!
           </h2>
           <p
             className='t16'
             style={{textAlign: 'center'}}
           >
-            Your account had been created <br /> successfully.
+            Ваш аккаунт был успешно <br /> создан.
           </p>
         </section>
       </main>
@@ -58,7 +57,7 @@ export const SignUpAccountCreated: React.FC = () => {
     return (
       <footer style={{padding: 20}}>
         <components.Button
-          text='Get started'
+          text='Начать'
           onClick={() => {
             navigate(Routes.TabNavigator);
           }}

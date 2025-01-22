@@ -1,34 +1,34 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 
-import {hooks} from '../hooks';
-import {Routes} from '../routes';
-import {components} from '../components';
+import { hooks } from '../hooks';
+import { Routes } from '../routes';
+import { components } from '../components';
 
 const onboarding = [
   {
     id: 1,
-    title1: 'Embark on Culinary',
-    title2: 'Adventures',
+    title1: 'Начните кулинарное',
+    title2: 'приключение',
     image: 'https://george-fx.github.io/dinehub_api/assets/images/05.jpg',
-    descriptionLine1: 'Embark on an exciting culinary',
-    descriptionLine2: 'journey with our app.',
+    descriptionLine1: 'Отправьтесь в захватывающее кулинарное',
+    descriptionLine2: 'путешествие с нашим приложением.',
   },
   {
     id: 2,
-    title1: 'Craft Your',
-    title2: 'Perfect Order',
+    title1: 'Создайте',
+    title2: 'идеальный заказ',
     image: 'https://george-fx.github.io/dinehub_api/assets/images/06.jpg',
-    descriptionLine1: 'Customize your cravings and place',
-    descriptionLine2: 'orders effortlessly.',
+    descriptionLine1: 'Настройте свои желания и сделайте',
+    descriptionLine2: 'заказы без усилий.',
   },
   {
     id: 3,
-    title1: 'Taste the',
-    title2: 'Delivered Magic',
+    title1: 'Вкусите',
+    title2: 'доставленную магию',
     image: 'https://george-fx.github.io/dinehub_api/assets/images/07.jpg',
-    descriptionLine1: 'Enjoy the convenience of doorstep',
-    descriptionLine2: 'culinary delights.',
+    descriptionLine1: 'Наслаждайтесь удобством доставки',
+    descriptionLine2: 'кулинарных изысков.',
   },
 ];
 
@@ -76,7 +76,7 @@ export const Onboarding: React.FC = () => {
           className='embla__container'
           style={{display: 'flex'}}
         >
-          {onboarding.map((item: any, index: any, array: any) => {
+          {onboarding.map((item: any) => {
             return (
               <div
                 key={item.id}
@@ -90,7 +90,7 @@ export const Onboarding: React.FC = () => {
               >
                 <img
                   src={item.image}
-                  alt='Carousel'
+                  alt='Карусель'
                   style={{
                     maxWidth: 251,
                     width: '64%',
@@ -171,7 +171,7 @@ export const Onboarding: React.FC = () => {
     return (
       <section style={{padding: 20}}>
         <components.Button
-          text='Get Started'
+          text='Начать'
           onClick={() => {
             navigate(Routes.SignIn);
           }}

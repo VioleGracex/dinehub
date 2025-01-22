@@ -62,7 +62,7 @@ export const Order: React.FC = () => {
             className='t14'
             style={{color: 'var(--main-color)', fontWeight: 500}}
           >
-            Subtotal
+            Промежуточный итог
           </span>
           <span
             className='t14'
@@ -79,11 +79,11 @@ export const Order: React.FC = () => {
             borderBottom: '1px solid #DBE9F5',
           }}
         >
-          <span className='t14'>Delivery</span>
+          <span className='t14'>Доставка</span>
           <span className='t14'>${delivery}</span>
         </div>
         <div className='row-center-space-between'>
-          <h4>Total</h4>
+          <h4>Итого</h4>
           <h4>${total.toFixed(2)}</h4>
         </div>
       </section>
@@ -93,7 +93,7 @@ export const Order: React.FC = () => {
   const renderButton = (): JSX.Element => {
     return (
       <components.Button
-        text='Checkout'
+        text='Оформить заказ'
         onClick={() => {
           navigate(Routes.Checkout);
         }}
@@ -128,7 +128,7 @@ export const Order: React.FC = () => {
           >
             <img
               src='https://george-fx.github.io/dinehub_api/assets/images/02.jpg'
-              alt='Empty cart'
+              alt='Пустая корзина'
               style={{
                 width: 'calc(100% - 80px)',
                 height: 'auto',
@@ -144,14 +144,14 @@ export const Order: React.FC = () => {
                 marginBottom: 14,
               }}
             >
-              Your cart is empty!
+              Ваша корзина пуста!
             </h2>
             <p
               className='t16'
               style={{textAlign: 'center'}}
             >
-              Looks like you haven't made <br />
-              your order yet.
+              Похоже, вы еще не сделали <br />
+              свой заказ.
             </p>
           </section>
         </main>
@@ -167,7 +167,7 @@ export const Order: React.FC = () => {
     return (
       <section style={{padding: '20px 20px 0 20px '}}>
         <components.Button
-          text='Shop now'
+          text='Купить сейчас'
           onClick={() =>
             navigate(Routes.MenuList, {state: {menuName: menu[0].name}})
           }

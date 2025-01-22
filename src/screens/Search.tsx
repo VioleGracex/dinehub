@@ -22,7 +22,7 @@ export const Search: React.FC = () => {
   const renderHeader = (): JSX.Element => {
     return (
       <components.Header
-        title='Filter'
+        title='Фильтр'
         showGoBack={true}
       />
     );
@@ -45,7 +45,7 @@ export const Search: React.FC = () => {
           <input
             type='text'
             value={searchQuery}
-            placeholder='Search for dishes'
+            placeholder='Поиск блюд'
             onChange={(event) => setSearchQuery(event.target.value)}
             style={{
               width: '100%',

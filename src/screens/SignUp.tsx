@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
-
-import {hooks} from '../hooks';
-import {Routes} from '../routes';
-import {svg} from '../assets/svg';
-import {components} from '../components';
+import React, { useState } from 'react';
+import { hooks } from '../hooks';
+import { Routes } from '../routes';
+import { svg } from '../assets/svg';
+import { components } from '../components';
 
 export const SignUp: React.FC = () => {
   const dispatch = hooks.useDispatch();
@@ -34,33 +33,33 @@ export const SignUp: React.FC = () => {
           }}
         >
           <h1 style={{marginBottom: 30, textTransform: 'capitalize'}}>
-            Sign up
+            Зарегистрироваться
           </h1>
           <components.Input
-            placeholder='Name'
+            placeholder='Имя'
             containerStyle={{marginBottom: 14}}
             leftIcon={<svg.UserSvg />}
           />
           <components.Input
-            placeholder='Email'
+            placeholder='Электронная почта'
             leftIcon={<svg.MailSvg />}
             rightIcon={<svg.CheckSvg />}
             containerStyle={{marginBottom: 14}}
           />
           <components.Input
-            placeholder='Password'
+            placeholder='Пароль'
             leftIcon={<svg.KeySvg />}
             rightIcon={<svg.EyeOffSvg />}
             containerStyle={{marginBottom: 14}}
           />
           <components.Input
-            placeholder='Confirm password'
+            placeholder='Подтвердите пароль'
             leftIcon={<svg.KeySvg />}
             rightIcon={<svg.EyeOffSvg />}
             containerStyle={{marginBottom: 14}}
           />
           <components.Button
-            text='Sign up'
+            text='Зарегистрироваться'
             containerStyle={{marginBottom: 20}}
             onClick={() => {
               navigate(Routes.VerifyYourPhoneNumber);
@@ -70,7 +69,7 @@ export const SignUp: React.FC = () => {
             style={{gap: 4}}
             className='row-center'
           >
-            <span className='t14'>Already have an account?</span>
+            <span className='t14'>Уже есть аккаунт?</span>
             <span
               className='t14 clickable'
               style={{color: 'var(--main-turquoise)'}}
@@ -78,7 +77,7 @@ export const SignUp: React.FC = () => {
                 navigate(Routes.SignIn);
               }}
             >
-              Sign in.
+              Войти.
             </span>
           </div>
         </section>

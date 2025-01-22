@@ -1,35 +1,35 @@
 import React from 'react';
+import { FiHome, FiSearch, FiShoppingCart, FiHeart, FiBell } from 'react-icons/fi';
 
-import {hooks} from '../hooks';
-import {svg} from '../assets/svg';
-import {TabScreens} from '../routes';
-import {actions} from '../store/actions';
+import { hooks } from '../hooks';
+import { TabScreens } from '../routes';
+import { actions } from '../store/actions';
 
 const tabs = [
   {
     id: 1,
     screen: TabScreens.Home,
-    icon: <svg.HomeTabSvg />,
+    icon: <FiHome size={24} />,
   },
   {
     id: 2,
     screen: TabScreens.Menu,
-    icon: <svg.SearchTabSvg />,
+    icon: <FiSearch size={24} />,
   },
   {
     id: 3,
     screen: TabScreens.Order,
-    icon: <svg.OrderTabSvg />,
+    icon: <FiShoppingCart size={24} />,
   },
   {
     id: 4,
     screen: TabScreens.Favorite,
-    icon: <svg.HeartTabSvg />,
+    icon: <FiHeart size={24} />,
   },
   {
     id: 5,
     screen: TabScreens.Notification,
-    icon: <svg.BellTabSvg />,
+    icon: <FiBell size={24} />,
   },
 ];
 
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
     <section
       style={{
         padding: 20,
-        backgroundColor: 'ver(--main-turquoise: #00b0b9)',
+        backgroundColor: 'var(--main-turquoise)',
         paddingTop: 10,
         paddingBottom: 10,
       }}
@@ -54,10 +54,10 @@ export const Footer: React.FC = () => {
         }}
       >
         <ul
-          style={{height: '100%'}}
+          style={{ height: '100%' }}
           className='row-center-space-around'
         >
-          {tabs.map((tab, index) => {
+          {tabs.map((tab) => {
             return (
               <li
                 key={tab.id}

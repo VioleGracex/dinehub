@@ -37,14 +37,14 @@ export const OrderFailed: React.FC = () => {
               marginBottom: 14,
             }}
           >
-            Sorry! Your order <br /> has failed!
+           Извините! Ваш заказ <br /> не выполнен!
           </h2>
           <p
             className='t16'
             style={{textAlign: 'center'}}
           >
-            Something went wrong. Please try <br /> again to continue your
-            order.
+            Что-то пошло не так. Попробуйте <br /> еще раз, чтобы продолжить
+            заказ.
           </p>
         </section>
       </main>
@@ -55,14 +55,14 @@ export const OrderFailed: React.FC = () => {
     return (
       <section style={{padding: 20}}>
         <components.Button
-          text='Try again'
+          text='Попробуйте еще раз'
           containerStyle={{marginBottom: 14}}
           onClick={() => {
             navigate(Routes.TabNavigator);
           }}
         />
         <components.Button
-          text='Go back to the order'
+          text='Вернуться к заказу'
           colorScheme='secondary'
           onClick={() => {
             navigate(Routes.TabNavigator);

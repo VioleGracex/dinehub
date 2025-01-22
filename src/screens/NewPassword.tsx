@@ -40,7 +40,7 @@ export const NewPassword: React.FC = () => {
             className='t16'
             style={{marginBottom: 30}}
           >
-            Enter new password and confirm.
+            Введите новый пароль и подтвердите его.
           </p>
           <components.Input
             placeholder='New password'

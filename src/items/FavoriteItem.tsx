@@ -23,7 +23,7 @@ export const FavoriteItem: React.FC<Props> = ({dish}) => {
   const cartHandler = (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => {
-    console.log('Added to cart:', dish);
+    console.log('Добавлено в корзину:', dish);
     event.stopPropagation();
     dispatch(actions.addToCart(dish));
   };
@@ -57,7 +57,7 @@ export const FavoriteItem: React.FC<Props> = ({dish}) => {
       />
       {dish.isHot && (
         <img
-          alt='Hot'
+          alt='Горячее'
           src={require('../assets/icons/15.png')}
           style={{
             width: 18,
@@ -72,7 +72,7 @@ export const FavoriteItem: React.FC<Props> = ({dish}) => {
       )}
       {dish.isNew && (
         <img
-          alt='New'
+          alt='Новое'
           src={require('../assets/icons/14.png')}
           style={{
             width: 34,

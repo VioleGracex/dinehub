@@ -28,7 +28,7 @@ export const OrderSuccessful: React.FC = () => {
         >
           <img
             src='https://george-fx.github.io/dinehub_api/assets/images/03.jpg'
-            alt='Order successful'
+            alt='Заказ выполнен успешно'
             className='status-img'
           />
           <h2
@@ -38,13 +38,13 @@ export const OrderSuccessful: React.FC = () => {
               marginBottom: 14,
             }}
           >
-            Thank you for <br /> your order!
+            Спасибо за <br /> ваш заказ!
           </h2>
           <p
             className='t16'
             style={{textAlign: 'center'}}
           >
-            Your order will be delivered on time. <br /> Thank you!
+            Ваш заказ будет доставлен вовремя. <br /> Спасибо!
           </p>
         </section>
       </main>
@@ -55,7 +55,7 @@ export const OrderSuccessful: React.FC = () => {
     return (
       <section style={{padding: 20}}>
         <components.Button
-          text='Continue Shopping'
+          text='Продолжить покупки'
           containerStyle={{marginBottom: 14}}
           onClick={() => {
             dispatch(actions.resetCart());
@@ -63,7 +63,7 @@ export const OrderSuccessful: React.FC = () => {
           }}
         />
         <components.Button
-          text='View orders'
+          text='Посмотреть заказы'
           colorScheme='secondary'
         />
       </section>

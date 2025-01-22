@@ -55,7 +55,7 @@ export const HomeReviewItem: React.FC<Props> = ({isLast, review, index}) => {
                 className='t10'
                 style={{lineHeight: 1.2, color: 'var(--main-turquoise)'}}
               >
-                Reply
+                Ответить
               </span>
             </button>
           </div>

@@ -19,7 +19,7 @@ export const ForgotPassword: React.FC = () => {
     return (
       <components.Header
         showGoBack={true}
-        title='Forgot password'
+        title='Забыли пароль'
       />
     );
   };
@@ -40,16 +40,15 @@ export const ForgotPassword: React.FC = () => {
             className='t16'
             style={{marginBottom: 30}}
           >
-            Please enter your email address. You will receive a link to create a
-            new password via email.
+            Пожалуйста, введите ваш адрес электронной почты. Вы получите ссылку для создания нового пароля по электронной почте.
           </p>
           <components.Input
-            placeholder='Email'
+            placeholder='Электронная почта'
             leftIcon={<svg.MailSvg />}
             containerStyle={{marginBottom: 20}}
           />
           <components.Button
-            text='send'
+            text='Отправить'
             onClick={() => navigate(Routes.NewPassword)}
           />
         </section>

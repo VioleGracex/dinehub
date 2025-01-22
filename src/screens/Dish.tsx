@@ -59,7 +59,7 @@ export const Dish: React.FC = () => {
         )}
         {dish.isHot && (
           <img
-            alt='Hot'
+            alt='Горячее'
             src={require('../assets/icons/15.png')}
             style={{
               width: 24,
@@ -108,7 +108,7 @@ export const Dish: React.FC = () => {
             className='t16'
             style={{marginLeft: 14, whiteSpace: 'nowrap'}}
           >
-            {dish.kcal} kcal - {dish.weight}g
+            {dish.kcal} ккал - {dish.weight} г
           </span>
         </div>
         <p className='t16'>{dish.description}</p>
@@ -166,14 +166,14 @@ export const Dish: React.FC = () => {
           </div>
         </div>
         <components.Button
-          text='+ Add to cart'
+          text='+ Добавить в корзину'
           onClick={() => {
             dispatch(actions.addToCart(dish));
           }}
           containerStyle={{marginBottom: 10}}
         />
         <components.Button
-          text='Reviews'
+          text='Отзывы'
           colorScheme='secondary'
           onClick={() => {
             navigate(Routes.Reviews);

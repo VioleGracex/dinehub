@@ -6,62 +6,62 @@ import {components} from '../components';
 const menu = [
   {
     id: 1,
-    name: 'Salads',
+    name: 'Салаты',
   },
   {
     id: 2,
-    name: 'Meat',
+    name: 'Мясо',
   },
   {
     id: 3,
-    name: 'Pasta',
+    name: 'Паста',
   },
   {
     id: 4,
-    name: 'Desserts',
+    name: 'Десерты',
   },
   {
     id: 5,
-    name: 'Drinks',
+    name: 'Напитки',
   },
   {
     id: 6,
-    name: 'Soups',
+    name: 'Супы',
   },
   {
     id: 7,
-    name: 'Snacks',
+    name: 'Закуски',
   },
 ];
 
 const preferences = [
   {
     id: 1,
-    name: 'Vegetarian',
+    name: 'Вегетарианское',
   },
   {
     id: 2,
-    name: 'Vegan',
+    name: 'Веганское',
   },
   {
     id: 3,
-    name: 'Gluten-Free',
+    name: 'Безглютеновое',
   },
   {
     id: 4,
-    name: 'Nut-Free',
+    name: 'Без орехов',
   },
   {
     id: 5,
-    name: 'Keto',
+    name: 'Кето',
   },
   {
     id: 6,
-    name: 'Low-Fat',
+    name: 'Низкокалорийное',
   },
   {
     id: 7,
-    name: 'Organic',
+    name: 'Органическое',
   },
 ];
 
@@ -70,7 +70,7 @@ export const Filter: React.FC = () => {
   const navigate = hooks.useNavigate();
 
   const [opacity, setOpacity] = useState<number>(0);
-  const [selectedCategory, setSelectedCategory] = useState('spicy');
+  const [selectedCategory, setSelectedCategory] = useState('острое');
   const [selectedMenu, setSelectedMenu] = useState(menu[1].name);
   const [selectedPreferences, setSelectedPreferences] = useState(
     preferences[3].name,
@@ -83,7 +83,7 @@ export const Filter: React.FC = () => {
   const renderHeader = (): JSX.Element => {
     return (
       <components.Header
-        title='Filter'
+        title='Фильтр'
         showGoBack={true}
       />
     );
@@ -93,7 +93,7 @@ export const Filter: React.FC = () => {
     return (
       <section style={{marginBottom: 30}}>
         <ul style={{display: 'flex', alignItems: 'center', gap: 8}}>
-          {['new', 'spicy'].map((category, index) => {
+          {['новое', 'острое'].map((category, index) => {
             return (
               <li
                 key={index}
@@ -131,7 +131,7 @@ export const Filter: React.FC = () => {
   const renderMenu = (): JSX.Element => {
     return (
       <section style={{marginBottom: 30}}>
-        <h5 style={{marginBottom: 14}}>Category</h5>
+        <h5 style={{marginBottom: 14}}>Категории</h5>
         <div
           style={{
             display: 'flex',
@@ -178,7 +178,7 @@ export const Filter: React.FC = () => {
   const renderDietaryPreferences = (): JSX.Element => {
     return (
       <section style={{marginBottom: 30}}>
-        <h5 style={{marginBottom: 14}}>Dietary Preferences</h5>
+        <h5 style={{marginBottom: 14}}>Диетические предпочтения</h5>
         <ul
           style={{
             display: 'flex',
@@ -230,17 +230,17 @@ export const Filter: React.FC = () => {
     return (
       <section>
         <components.Button
-          text='apply filters'
+          text='Применить фильтры'
           onClick={() => {
             navigate(-1);
           }}
           containerStyle={{marginBottom: 10}}
         />
         <components.Button
-          text='Reset filters'
+          text='Сбросить фильтры'
           colorScheme='secondary'
           onClick={() => {
-            setSelectedCategory('spicy');
+            setSelectedCategory('острое');
             setSelectedMenu(menu[1].name);
             setSelectedPreferences(preferences[3].name);
           }}

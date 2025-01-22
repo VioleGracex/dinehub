@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
-
-import {hooks} from '../hooks';
-import {Routes} from '../routes';
-import {svg} from '../assets/svg';
-import {components} from '../components';
+import React, { useState } from 'react';
+import { hooks } from '../hooks';
+import { Routes } from '../routes';
+import { svg } from '../assets/svg';
+import { components } from '../components';
 
 export const SignIn: React.FC = () => {
   const dispatch = hooks.useDispatch();
@@ -36,21 +35,21 @@ export const SignIn: React.FC = () => {
             borderRadius: 10,
           }}
         >
-          <h1 style={{marginBottom: 10}}>Welcome Back!</h1>
+          <h1 style={{marginBottom: 10}}>С возвращением!</h1>
           <span
             className='t16'
             style={{marginBottom: 30, display: 'block'}}
           >
-            Sign in to continue
+            Войдите, чтобы продолжить
           </span>
           <components.Input
-            placeholder='Email'
+            placeholder='Электронная почта'
             containerStyle={{marginBottom: 14}}
             leftIcon={<svg.MailSvg />}
             rightIcon={<svg.CheckSvg />}
           />
           <components.Input
-            placeholder='Password'
+            placeholder='Пароль'
             leftIcon={<svg.KeySvg />}
             rightIcon={<svg.EyeOffSvg />}
             containerStyle={{marginBottom: 20}}
@@ -75,7 +74,7 @@ export const SignIn: React.FC = () => {
               >
                 {rememberMe && <svg.RememberCheckSvg />}
               </div>
-              <span className='t14'>Remember me</span>
+              <span className='t14'>Запомнить меня</span>
             </div>
             <span
               className='t14'
@@ -84,11 +83,11 @@ export const SignIn: React.FC = () => {
                 navigate(Routes.ForgotPassword);
               }}
             >
-              Forgot password?
+              Забыли пароль?
             </span>
           </div>
           <components.Button
-            text='Sign in'
+            text='Войти'
             containerStyle={{marginBottom: 20}}
             onClick={() => {
               navigate(Routes.TabNavigator);
@@ -98,7 +97,7 @@ export const SignIn: React.FC = () => {
             style={{gap: 4}}
             className='row-center'
           >
-            <span className='t14'>Don’t have an account?</span>
+            <span className='t14'>Нет аккаунта?</span>
             <span
               className='t14 clickable'
               style={{color: 'var(--main-turquoise)'}}
@@ -106,7 +105,7 @@ export const SignIn: React.FC = () => {
                 navigate(Routes.SignUp);
               }}
             >
-              Sign up.
+              Зарегистрироваться.
             </span>
           </div>
         </section>

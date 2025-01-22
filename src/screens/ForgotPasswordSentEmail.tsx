@@ -45,14 +45,14 @@ export const ForgotPasswordSentEmail: React.FC = () => {
               marginBottom: 14,
             }}
           >
-            Your password has <br />
-            been reset!
+            Ваш пароль был <br />
+            сброшен!
           </h2>
           <p
             className='t16'
             style={{textAlign: 'center'}}
           >
-            Log in with your new password to <br /> continue your journey.
+            Войдите с новым паролем, чтобы <br /> продолжить ваше путешествие.
           </p>
         </section>
       </main>
@@ -63,7 +63,7 @@ export const ForgotPasswordSentEmail: React.FC = () => {
     return (
       <footer style={{padding: 20}}>
         <components.Button
-          text='done'
+          text='Готово'
           onClick={() => navigate(Routes.SignIn)}
         />
       </footer>

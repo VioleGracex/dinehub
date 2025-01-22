@@ -19,7 +19,7 @@ export const VerifyYourPhoneNumber: React.FC = () => {
     return (
       <components.Header
         showGoBack={true}
-        title='Verify number'
+        title='Проверить номер'
       />
     );
   };
@@ -42,15 +42,15 @@ export const VerifyYourPhoneNumber: React.FC = () => {
             className='t16'
             style={{marginBottom: 30}}
           >
-            We have sent you an SMS with a code to number +17 0123456789.
+           Мы отправили вам СМС с кодом на номер +17 0123456789.
           </p>
           <components.Input
             leftIcon={<svg.PhoneSvg />}
-            placeholder='Enter phone number'
+            placeholder='Введите номер телефона'
             containerStyle={{marginBottom: 14}}
           />
           <components.Button
-            text='confirm'
+            text='подтверждать'
             containerStyle={{marginBottom: 20}}
             onClick={() => {
               navigate(Routes.ConfirmationCode);

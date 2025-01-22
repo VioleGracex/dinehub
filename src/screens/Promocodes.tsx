@@ -21,7 +21,7 @@ export const Promocodes: React.FC = () => {
     return (
       <components.Header
         showGoBack={true}
-        title='Promocodes & gift cards'
+        title='Промокоды и подарочные карты'
       />
     );
   };
@@ -68,7 +68,7 @@ export const Promocodes: React.FC = () => {
         className='row-center'
       >
         <components.Input
-          placeholder='Enter promocode'
+          placeholder='Введите промокод'
           leftIcon={<svg.TagSvg />}
         />
         <button
@@ -84,7 +84,7 @@ export const Promocodes: React.FC = () => {
             className='t14'
             style={{color: 'var(--white-color)', fontWeight: 700}}
           >
-            + Add
+            + Добавить
           </span>
         </button>
       </section>

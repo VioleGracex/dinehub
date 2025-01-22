@@ -23,13 +23,13 @@ export const TabNavigator: React.FC = () => {
       case TabScreens.Menu:
         return '';
       case TabScreens.Order:
-        return 'Order';
+        return 'Заказ';
       case TabScreens.Favorite:
-        return 'Favorite';
+        return 'Избранное';
       case TabScreens.Notification:
-        return 'Notification';
+        return 'Уведомления';
       default:
-        return 'Home';
+        return 'Главная';
     }
   };
 

@@ -17,7 +17,7 @@ export const Reviews: React.FC = () => {
   const renderHeader = (): JSX.Element => {
     return (
       <components.Header
-        title='Reviews'
+        title='Отзывы'
         showGoBack={true}
       />
     );

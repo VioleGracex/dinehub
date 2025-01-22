@@ -35,7 +35,7 @@ export const MenuList: React.FC = () => {
   const renderHeader = (): JSX.Element => {
     return (
       <components.Header
-        title='Menu'
+        title='Меню'
         showGoBack={true}
         showBasket={true}
       />

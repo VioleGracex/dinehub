@@ -51,7 +51,7 @@ export const ReviewItem: React.FC<Props> = ({review, isLast}) => {
                 className='t10'
                 style={{lineHeight: 1.2, color: 'var(--main-turquoise)'}}
               >
-                Reply
+                отправить отзыв
               </span>
             </button>
           </div>

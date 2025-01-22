@@ -20,27 +20,27 @@ type Props = {
 const modalMenu = [
   {
     id: 1,
-    title: 'Personal information',
+    title: 'Личная информация',
     route: Routes.EditProfile,
     switch: false,
   },
   {
     id: 2,
-    title: 'My orders',
+    title: 'Мои заказы',
     route: Routes.OrderHistory,
     // route: Routes.OrderHistoryEmpty,
     switch: false,
   },
   {
     id: 3,
-    title: 'Promocodes & gift cards',
+    title: 'Промокоды и подарочные карты',
     route: Routes.Promocodes,
     // route: Routes.PromocodesEmpty,
     switch: false,
   },
   {
     id: 4,
-    title: 'Notifications',
+    title: 'Уведомления',
     route: '',
     switch: true,
   },
@@ -52,13 +52,13 @@ const modalMenu = [
   },
   {
     id: 6,
-    title: 'Support center',
+    title: 'Центр поддержки',
     route: '',
     switch: false,
   },
   {
     id: 7,
-    title: 'Sign out',
+    title: 'Выйти',
     route: Routes.SignIn,
     switch: false,
   },
@@ -109,7 +109,7 @@ export const Header: React.FC<Props> = ({
         }}
       >
         <img
-          alt='user'
+          alt='пользователь'
           src='https://george-fx.github.io/dinehub_api/assets/users/01.jpg'
           style={{width: 22, height: 22, borderRadius: 20}}
         />
@@ -261,7 +261,7 @@ export const Header: React.FC<Props> = ({
           >
             <img
               src='https://george-fx.github.io/dinehub_api/assets/users/01.jpg'
-              alt='user'
+              alt='пользователь'
               style={{width: 60, height: 60, borderRadius: 20}}
             />
             <div style={{display: 'flex', flexDirection: 'column'}}>
@@ -278,7 +278,7 @@ export const Header: React.FC<Props> = ({
               <span className='t14'>jordanhebert@mail.com</span>
             </div>
           </div>
-          {/* Phone */}
+          {/* Модальное меню */}
           <ul
             style={{
               paddingLeft: 20,
@@ -307,14 +307,14 @@ export const Header: React.FC<Props> = ({
                   <span
                     className='t16 number-of-lines-1'
                     style={
-                      item.title === 'Sign out'
+                      item.title === 'Выйти'
                         ? {color: '#FA5555'}
                         : {color: 'var(--main-color)'}
                     }
                   >
                     {item.title}
                   </span>
-                  {item.route !== '' && item.title !== 'Sign out' && (
+                  {item.route !== '' && item.title !== 'Выйти' && (
                     <svg.RightArrowSvg />
                   )}
                   {item.switch && <components.Switch />}

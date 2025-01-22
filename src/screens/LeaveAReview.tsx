@@ -18,7 +18,7 @@ export const LeaveAReview: React.FC = () => {
     return (
       <components.Header
         showGoBack={true}
-        title='Leave a review'
+        title='Оставить отзыв'
       />
     );
   };
@@ -36,7 +36,7 @@ export const LeaveAReview: React.FC = () => {
           }}
         >
           <img
-            alt='rate service'
+            alt='оценить сервис'
             className='status-img'
             style={{marginBottom: 10}}
             src='https://george-fx.github.io/dinehub_api/assets/images/08.jpg'
@@ -48,7 +48,7 @@ export const LeaveAReview: React.FC = () => {
               marginBottom: 14,
             }}
           >
-            Please rate the quality of <br /> service for the order!
+            Пожалуйста, оцените качество <br /> сервиса для вашего заказа!
           </h2>
           <components.RatingStars
             rating={rating}
@@ -59,12 +59,11 @@ export const LeaveAReview: React.FC = () => {
             className='t16'
             style={{textAlign: 'center'}}
           >
-            Your comments and suggestions help <br /> us improve the service
-            quality better!
+            Ваши комментарии и предложения помогут <br /> нам улучшить качество сервиса!
           </p>
           <div style={{marginBottom: 20}}>
             <textarea
-              placeholder='Enter your comment'
+              placeholder='Введите ваш комментарий'
               style={{
                 height: 127,
                 width: '100%',
@@ -81,7 +80,7 @@ export const LeaveAReview: React.FC = () => {
             />
           </div>
           <components.Button
-            text='Send review'
+            text='Отправить отзыв'
             onClick={() => {
               navigate(-1);
             }}

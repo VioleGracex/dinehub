@@ -47,13 +47,13 @@ export const Notification: React.FC = () => {
                     style={{gap: 8, marginBottom: 14}}
                     className='row-center'
                   >
-                    {notification.title === 'Order Out for Delivery' && (
+                    {notification.title === 'Заказ в пути' && (
                       <svg.NotificationCheckSvg />
                     )}
-                    {notification.title === 'Limited-Time Deal' && (
+                    {notification.title === 'Ограниченное предложение' && (
                       <svg.GiftSvg />
                     )}
-                    {notification.title === 'Reservation Confirmed' && (
+                    {notification.title === 'Бронирование подтверждено' && (
                       <svg.NotificationCheckSvg />
                     )}
                     <h5 className='number-of-lines-1'>{notification.title}</h5>
@@ -76,7 +76,7 @@ export const Notification: React.FC = () => {
                           handleMarkAsRead(String(notification.id))
                         }
                       >
-                        Mark as read
+                        Отметить как прочитанное
                       </span>
                     )}
                   </div>

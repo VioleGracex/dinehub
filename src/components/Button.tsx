@@ -39,9 +39,9 @@ export const Button: React.FC<Props> = ({
       colorScheme === 'primary'
         ? 'var(--white-color)'
         : 'var(--main-turquoise)',
-    fontFamily: 'DM Sans',
+    fontFamily: 'PT Sans',
     fontWeight: 700,
-    fontSize: 14,
+    fontSize: 20,
     lineHeight: 1.7,
     cursor: 'pointer',
     margin: '0 auto',

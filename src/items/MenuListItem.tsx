@@ -37,7 +37,7 @@ export const MenuListItem: React.FC<Props> = ({dish, isLast}) => {
       />
       {dish.isHot && (
         <img
-          alt='Hot'
+          alt='Горячее'
           src={require('../assets/icons/15.png')}
           style={{
             width: 18,
@@ -52,7 +52,7 @@ export const MenuListItem: React.FC<Props> = ({dish, isLast}) => {
       )}
       {dish.isNew && (
         <img
-          alt='New'
+          alt='Новое'
           src={require('../assets/icons/14.png')}
           style={{
             width: 34,
@@ -91,7 +91,7 @@ export const MenuListItem: React.FC<Props> = ({dish, isLast}) => {
           className='t10'
           style={{marginBottom: 8}}
         >
-          {dish.kcal} kcal - {dish.weight}g
+          {dish.kcal} ккал - {dish.weight} г
         </span>
         <span
           className='t14'

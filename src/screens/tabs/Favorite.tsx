@@ -80,14 +80,13 @@ export const Favorite: React.FC = () => {
               textTransform: 'capitalize',
             }}
           >
-            Your favorite list is empty!
+            Ваш список избранного пуст!
           </h2>
           <p
             style={{textAlign: 'center'}}
             className='t16'
           >
-            Your list of favorite dishes is currently <br /> empty. Why not
-            start adding dishes <br /> that you love?
+            Ваш список избранных блюд в настоящее время <br /> пуст. Почему бы не начать добавлять блюда <br /> которые вам нравятся?
           </p>
           {/* <p>Your favorite list is empty.</p> */}
         </section>

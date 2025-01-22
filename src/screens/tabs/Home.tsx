@@ -47,7 +47,7 @@ export const Home: React.FC = () => {
             return (
               <SwiperSlide key={banner.id}>
                 <img
-                  alt={'banner'}
+                  alt={'баннер'}
                   src={banner.banner}
                   style={{width: '100%'}}
                   className='clickable'
@@ -95,7 +95,7 @@ export const Home: React.FC = () => {
     return (
       <section style={{marginBottom: 30}}>
         <components.BlockHeading
-          title='We offer'
+          title='Мы предлагаем'
           viewAllOnClick={() => {
             dispatch(actions.setScreen(TabScreens.Menu));
           }}
@@ -167,7 +167,7 @@ export const Home: React.FC = () => {
     return (
       <div style={{marginBottom: 40}}>
         <components.BlockHeading
-          title='Recommended for you'
+          title='Рекомендуем вам'
           containerStyle={{marginLeft: 20, marginRight: 20, marginBottom: 14}}
         />
         <div style={{width: '100%'}}>
@@ -203,7 +203,7 @@ export const Home: React.FC = () => {
     return (
       <section style={{marginBottom: 20}}>
         <components.BlockHeading
-          title='Our Happy clients say'
+          title='Наши счастливые клиенты говорят'
           viewAllOnClick={() => navigate(Routes.Reviews)}
           containerStyle={{marginLeft: 20, marginRight: 20, marginBottom: 14}}
         />

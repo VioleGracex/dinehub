@@ -37,7 +37,7 @@ export const OrderHistory: React.FC = () => {
   const renderHeader = (): JSX.Element => {
     return (
       <components.Header
-        title='Order history'
+        title='Истории заказов'
         showGoBack={true}
       />
     );
@@ -144,11 +144,11 @@ export const OrderHistory: React.FC = () => {
                         className='row-center-space-between'
                         style={{marginBottom: 8}}
                       >
-                        <span className='t14'>Discount</span>
+                        <span className='t14'>Скидка</span>
                         <span className='t14'>- ${order.discount}</span>
                       </li>
                       <li className='row-center-space-between'>
-                        <span className='t14'>Delivery</span>
+                        <span className='t14'>Доставка</span>
                         <span className='t14'>${order.delivery}</span>
                       </li>
                     </ul>
@@ -156,7 +156,7 @@ export const OrderHistory: React.FC = () => {
                 </details>
                 {isOpen && order.status === 'shipping' && (
                   <components.Button
-                    text='track order'
+                    text='отслеживать заказ'
                     containerStyle={{marginBottom: 20}}
                     onClick={() => navigate(Routes.TrackYourOrder)}
                   />
@@ -167,7 +167,7 @@ export const OrderHistory: React.FC = () => {
                     style={{marginBottom: 20, gap: 15}}
                   >
                     <components.Button
-                      text='repeat order'
+                      text='повторить заказ'
                       colorScheme='secondary'
                       onClick={() => {
                         dispatch(actions.setScreen(TabScreens.Order));
@@ -175,7 +175,7 @@ export const OrderHistory: React.FC = () => {
                       }}
                     />
                     <components.Button
-                      text='Leave review'
+                      text='Оставить отзыв'
                       onClick={() => navigate(Routes.LeaveAReview)}
                     />
                   </div>

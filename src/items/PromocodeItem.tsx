@@ -54,10 +54,10 @@ export const PromocodeItem: React.FC<Props> = ({isLast, promocode}) => {
             className='t12'
             style={{color: 'var(--white-color)', fontWeight: 500}}
           >
-            {promocode.discount}% discount
+            {promocode.discount}% скидка
           </span>
         </div>
-        <span className='t12'>Expire {promocode.expiry}</span>
+        <span className='t12'>Истекает {promocode.expiry}</span>
       </section>
     </li>
   );

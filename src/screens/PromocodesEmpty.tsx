@@ -17,7 +17,7 @@ export const PromocodesEmpty: React.FC = () => {
     return (
       <components.Header
         showGoBack={true}
-        title='Promocodes & gift cards'
+        title='Промокоды и подарочные карты'
       />
     );
   };
@@ -60,12 +60,12 @@ export const PromocodesEmpty: React.FC = () => {
             experience.
           </p>
           <components.Input
-            placeholder='Enter promocode'
+            placeholder='Введите промокод'
             containerStyle={{marginBottom: 20}}
             leftIcon={<svg.TagSvg />}
           />
           <components.Button
-            text='add promocode'
+            text='добавить промокод'
             containerStyle={{marginBottom: 20}}
             onClick={() => {}}
           />

@@ -70,28 +70,28 @@ export const EditProfile: React.FC = () => {
             </div>
           </div>
           <components.Input
-            placeholder='Name'
+            placeholder='Имя'
             containerStyle={{marginBottom: 14}}
             leftIcon={<svg.UserSvg />}
           />
           <components.Input
-            placeholder='Email'
+            placeholder='Электронная почта'
             containerStyle={{marginBottom: 14}}
             leftIcon={<svg.MailSvg />}
             rightIcon={<svg.CheckSvg />}
           />
           <components.Input
-            placeholder='Phone number'
+            placeholder='Номер телефона'
             containerStyle={{marginBottom: 14}}
             leftIcon={<svg.PhoneSvg />}
           />
           <components.Input
-            placeholder='Your address'
+            placeholder='Ваш адрес'
             containerStyle={{marginBottom: 20}}
             leftIcon={<svg.MapSvg />}
           />
           <components.Button
-            text='save changes'
+            text='сохранить изменения'
             containerStyle={{marginBottom: 20}}
             onClick={() => {
               navigate(-1);

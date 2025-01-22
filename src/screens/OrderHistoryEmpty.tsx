@@ -19,7 +19,7 @@ export const OrderHistoryEmpty: React.FC = () => {
     return (
       <components.Header
         showGoBack={true}
-        title='Order history'
+        title='История заказов'
       />
     );
   };
@@ -38,17 +38,17 @@ export const OrderHistoryEmpty: React.FC = () => {
         >
           <img
             src='https://george-fx.github.io/dinehub_api/assets/images/10.jpg'
-            alt='Account created'
+            alt='Аккаунт создан'
             className='status-img'
             style={{marginBottom: 14}}
           />
-          <h2 style={{marginBottom: 14}}>No Order History Yet!</h2>
+          <h2 style={{marginBottom: 14}}>Истории заказов пока нет!</h2>
           <p
             className='t16'
             style={{textAlign: 'center'}}
           >
-            It looks like your order history is empty. <br /> Place your order
-            now to start building <br /> your history!
+            Похоже, история ваших заказов пуста. <br /> Оформите заказ
+            сейчас, чтобы начать создавать <br /> свою историю!
           </p>
         </section>
       </main>
@@ -59,7 +59,7 @@ export const OrderHistoryEmpty: React.FC = () => {
     return (
       <footer style={{padding: 20}}>
         <components.Button
-          text='Start shopping'
+          text='Начать покупки'
           onClick={() => {
             dispatch(actions.setScreen(TabScreens.Home));
             navigate(Routes.TabNavigator);

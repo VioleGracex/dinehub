@@ -49,7 +49,7 @@ export const OrderItem: React.FC<Props> = ({dish, isLast}) => {
           className='t10'
           style={{marginBottom: 5}}
         >
-          {dish.kcal} kcal - {dish.weight}g
+          {dish.kcal} ккал - {dish.weight}g
         </span>
         <span
           className='t14'
